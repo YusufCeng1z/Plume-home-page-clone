@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ycngz - Plume Home Page Clone</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="pb-[80px]">
+
+
+
+    <div class="absolute top-0 left-0 z-5 w-full hidden lg:block">
+        <div id="lottie-container">  
+        </div>
+    </div>
+
+    <header class="relative container mx-auto z-20 max-w-[1024px] pt-4 lg:pt-8 lg:pb-6 lg:px-4">      
+        <nav class="bg-[#ffffffbf] pl-6 pt-3 pr-3 pb-3 backdrop-blur-xl flex justify-between items-center rounded-full">
+            <div>
+                <img src="./assets/images/logo.png" alt="" class="w-[96px]">
+            </div>
+            <div class="lg:block hidden">
+                <ul class="flex space-x-[12px] font-[inter] text-sm font-medium ">
+                    <li class="px-[12px] py-[6px] hover:bg-white rounded-full cursor-pointer">Ecosystem</li>
+                    <li class="px-[12px] py-[6px] hover:bg-white rounded-full cursor-pointer">Community</li>
+                    <li class="menu-item">
+                        <div class="px-3 py-2 hover:bg-white rounded-full cursor-pointer flex items-center">
+                            Technology
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1 arrow">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                        <div class="dropdown absolute ml-[20%] left-0  bg-white rounded-lg shadow-lg z-10 p-4 border border-gray-200">
+                            <div class="grid grid-cols-8 gap-4 w-full">
+                                <div class="w-full col-span-5">
+                                    <h3 class="text-gray-500 text-sm font-light mb-3">Core Products</h3>
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <div class="flex justify-start items-center w-full space-x-2 hover:bg-gray-50 hover:cursor-pointer rounded-[12px] p-2">
+                                            <div>
+                                                <img src="assets/images/pluim-chain.svg" class="h-[40px] w-[40px]">
+                                            </div>
+                                            <div>
+                                                <div class="title">Plume Chain</div>
+                                                <div class="desc text-light text-gray-500">The real world chain</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-start items-center w-full space-x-2 hover:bg-gray-50 hover:cursor-pointer rounded-[12px] p-2">
+                                            <div>
+                                                <img src="assets/images/pluim-chain.svg" class="h-[40px] w-[40px]">
+                                            </div>
+                                            <div>
+                                                <div class="title">Plume Chain</div>
+                                                <div class="desc text-light text-gray-500">The real world chain</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-start items-center w-full space-x-2 hover:bg-gray-50 hover:cursor-pointer rounded-[12px] p-2">
+                                            <div>
+                                                <img src="assets/images/pluim-chain.svg" class="h-[40px] w-[40px]">
+                                            </div>
+                                            <div>
+                                                <div class="title">Plume Chain</div>
+                                                <div class="desc text-light text-gray-500">The real world chain</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-start items-center w-full space-x-2 hover:bg-gray-50 hover:cursor-pointer rounded-[12px] p-2">
+                                            <div>
+                                                <img src="assets/images/pluim-chain.svg" class="h-[40px] w-[40px]">
+                                            </div>
+                                            <div>
+                                                <div class="title">Plume Chain</div>
+                                                <div class="desc text-light text-gray-500">The real world chain</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-l border-gray-50 col-span-3 px-4">
+                                    <h3 class="text-gray-500 text-sm font-light mb-3">Developer Tools</h3>
+                                    <ul class="space-y-4">
+                                        <li class="flex items-center space-x-4 hover:cursor-pointer hover:bg-gray-50 rounded-[12px] p-2">
+                                            <img src="assets/images/skylink.avif" alt="" class="h-6">
+                                            <div>
+                                                <div class="title text-xs text-light">SkyLink</div>
+                                                <div class="desc text-xs text-light text-gray-600">Omnichain yield</div>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-center space-x-4 hover:cursor-pointer hover:bg-gray-50 rounded-[12px] p-2">
+                                            <img src="assets/images/skylink.avif" alt="" class="h-6">
+                                            <div>
+                                                <div class="title text-xs text-light">SkyLink</div>
+                                                <div class="desc text-xs text-light text-gray-600">Omnichain yield</div>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-center space-x-4 hover:cursor-pointer hover:bg-gray-50 rounded-[12px] p-2">
+                                            <img src="assets/images/skylink.avif" alt="" class="h-6">
+                                            <div>
+                                                <div class="title text-xs text-light">SkyLink</div>
+                                                <div class="desc text-xs text-light text-gray-600">Omnichain yield</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative menu-item">
+                        <div class="px-3 py-2 hover:bg-white rounded-full cursor-pointer flex items-center">
+                            Developers
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1 arrow">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                        <div class="dropdown absolute left-0  w-60 bg-white rounded-lg shadow-lg z-10 p-2 border border-gray-200">
+                            <ul class="py-1">
+                                <li>
+                                <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">
+                                    <div class="title text-sm">Documentation</div>
+                                    <div class="desc text-sm text-gray-600 text-light">
+                                        Access everything you need to deploy apps on Plume
+                                    </div>
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">
+                                        <div class="title text-sm"> Take Flight Program</div>
+                                        <div class="desc text-sm text-gray-600 text-light">
+                                            Discover essential tools and services for developers
+                                        </div>
+                                    </a>
+                                    </li>
+                                <li>
+                                        <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">
+                                            <div class="title text-sm">Aviation Academy</div>
+                                            <div class="desc text-sm text-gray-600 text-light">
+                                                Exclusive accelerator program for all RWA builders
+                                            </div>
+                                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="relative menu-item">
+                        <div class="px-3 py-2 hover:bg-white rounded-full cursor-pointer flex items-center">
+                            Resources
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1 arrow">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                        <div class="dropdown absolute left-0  w-60 bg-white rounded-lg shadow-lg z-10 border border-gray-200 p-2">
+                            <ul class="py-1">
+                                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">Blog</a></li>
+                                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">Whitepapers</a></li>
+                                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">Case Studies</a></li>
+                                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100 rounded-md">Events</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex justify-center items-center space-x-5">
+                <div class="font-[inter] px-[12px] py-[6px] bg-black text-white rounded-full cursor-pointer text-sm font-medium hover:opacity-60">Testnet</div>
+                <div class="mobile-menu lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                      
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto max-w-[1024px] lg:px-[16px] p-4 z-10 relative space-y-[160px]">
+
+        <section class="hero-section w-full flex justify-center items-center flex-col space-y-6">
+            <div class="hero-title text-[48px] text-center font-bold tracking-[-1.44px] leading-[56px] md:mt-32 mt-16 hero-animate opacity-0">
+                Your Hub for Everything <br> RWAfi
+            </div>
+             <div class="desc text-center font-[inter] tracking-[-.47px] leading-[28px] text-[20px] text-[#747474] max-w-[620px] font-medium hero-animate-desc opacity-0 ">
+                Transforming assets into globally accessible financial tools with true crypto-native utility
+             </div>
+             <div class="cursor-pointer font-[inter] flex px-4 py-3 border  rounded-full border-gray-200 space-x-2 hover:bg-gray-100 hero-animate-btn">
+                Explore Ecosystem 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-2 size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>     
+             </div>
+        </section>      
+
+        <div class="space opacity-0 p-2 md:block hidden"></div>
+
+        <section class="section-animate-up opacity-0 space-y-[60px]">
+
+            <div>
+                <div class="title text-[40px] text-center font-bold">Ecosystem, Community, Technology</div>
+                <div class="desc text-center text-[#747474] text-[20px] mt-2 text-[inter]">Seamless RWA distribution, fully end-to-end</div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-[16px]">
+                <div id="section-grid-1" class="w-full p-4 flex justify-center items-center flex-col h-[320px]">
+                  <div class="title text-[72px] text-[#963d01] font-bold">18M</div>
+                  <div class="desc font-bold text-[24px] text-[#963d01]">Unique addresses</div>
+                </div>
+                <div id="section-grid-2" class="w-full p-4 flex justify-center items-center flex-col h-[320px]">
+                    <div class="title text-[72px] text-[#4f385c] font-bold">280M</div>
+                    <div class="desc font-bold text-[24px] text-[#4f385c]">Transactions</div>
+                  </div>
+                  <div id="section-grid-3" class="w-full p-4 flex justify-center items-center flex-col h-[320px]">
+                    <div class="title text-[72px] text-[#3b65a9] font-bold">4B+</div>
+                    <div class="desc font-bold text-[24px] text-[#3b65a9]">Assets available</div>
+                  </div>
+                  <div id="section-grid-4" class="w-full p-4 flex justify-center items-center flex-col h-[320px]">
+                    <div class="title text-[72px] text-[#004038] font-bold">180+</div>
+                    <div class="desc font-bold text-[24px] text-[#004038]">Live protocols</div>
+                  </div>
+            </div>
+
+        </section>
+        
+
+
+    </div>
+
+    
+    <section  data-aos="fade-right" class="relative mt-[160px] lg:p-0 p-4" id="ecosystemSwiper">
+
+        <div class="flex md:flex-row flex-col items-center justify-between mb-4 container max-w-[1024px] mx-auto mb-9">
+            <div>
+                <h2 class="font-bold text-gray-900 text-[40px] flex  items-center">Ecosystem <span class="inline-block ml-2 text-[18px] text-[#747474] font-medium bg-gray-200 px-3 py-1 rounded-full">180+</span></h2>
+                <p class="text-[#747474] text-[20px] mt-2">The industry's best projects and teams live on Plume</p>
+            </div>
+            <div class="flex gap-2 md:mt-0 mt-4">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        
+   
+        <div class="swiper ecosystemSwiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="ecosystem-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/eco-slider/1.png" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex justify-between items-end z-50 w-full h-full relative">
+                            <div>
+                                <h3 class="text-2xl font-bold">Nest</h3>
+                                <p class="text-gray-500 text-2xl">Yield</p>
+                            </div>
+                            <div>
+                                <div class="bg-white p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="ecosystem-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/eco-slider/2.png" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex justify-between items-end z-50 w-full h-full relative">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Ondo</h3>
+                                <p class="text-gray-500 text-2xl">Yield</p>
+                            </div>
+                            <div>
+                                <div class="bg-white p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <div class="swiper-slide">
+                    <div class="ecosystem-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/eco-slider/3.png" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex justify-between items-end z-50 w-full h-full relative">
+                            <div>
+                                <h3 class="text-2xl font-bold">Superstate</h3>
+                                <p class="text-gray-500 text-2xl">Yield</p>
+                            </div>
+                            <div>
+                                <div class="bg-white p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="ecosystem-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/eco-slider/4.png" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex justify-between items-end z-50 w-full h-full relative">
+                            <div>
+                                <h3 class="text-2xl font-bold ">Centrifuge</h3>
+                                <p class="text-gray-500 text-2xl">Yield</p>
+                            </div>
+                            <div>
+                                <div class="bg-white p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="ecosystem-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/eco-slider/3.png" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex justify-between items-end z-50 w-full h-full relative">
+                            <div>
+                                <h3 class="text-2xl font-bold">Superstate</h3>
+                                <p class="text-gray-500 text-2xl">Yield</p>
+                            </div>
+                            <div>
+                                <div class="bg-white p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="ecosystem-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/eco-slider/2.png" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex justify-between items-end z-50 w-full h-full relative">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Ondo</h3>
+                                <p class="text-gray-500 text-2xl">Yield</p>
+                            </div>
+                            <div>
+                                <div class="bg-white p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+    
+
+            </div>
+        </div>
+    </section>
+
+    <section  data-aos="fade-right" class="relative mt-[160px] lg:p-0 p-4" id="communitySwiper">
+
+        <div class="flex md:flex-row flex-col items-center justify-between mb-4 container max-w-[1024px] mx-auto mb-9">
+            <div>
+                <h2 class="font-bold text-gray-900 text-[40px] flex  items-center">Community </h2>
+                <p class="text-[#747474] text-[20px] mt-2">3M+ native crypto users who believe in RWAs</p>
+            </div>
+            <div class="flex gap-2 md:mt-0 mt-4">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        
+   
+        <div class="swiper communitySwiper">
+            <div class="swiper-wrapper">
+                
+
+                <div class="swiper-slide">
+                    <div class="communitySwiper-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/comunity/1.avif" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex flex-col justify-center items-center z-50 w-full h-full relative">
+                                <h3 class="text-2xl font-bold text-[72px]">1M</h3>
+                                <p class=" text-2xl font-bold text-[24px]">X followers</p>                                         
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="swiper-slide">
+                    <div class="communitySwiper-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/comunity/2.avif" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex flex-col justify-center items-center z-50 w-full h-full relative">
+                                <h3 class="text-2xl font-bold text-[72px] text-[#272459]">450K</h3>
+                                <p class=" text-2xl font-bold text-[24px] text-[#272459]">Discord Members</p>                                         
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="communitySwiper-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/comunity/3.avif" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex flex-col justify-center items-center z-50 w-full h-full relative">
+                                <h3 class="text-2xl font-bold text-[72px] text-[#3b65a9]">240K</h3>
+                                <p class=" text-2xl font-bold text-[24px] text-[#3b65a9]">Telegram subscribers</p>                                         
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="communitySwiper-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/comunity/4.avif" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex flex-col justify-center items-center z-50 w-full h-full relative">
+                                <h3 class="text-2xl font-bold text-[72px] text-[#922100]">1M</h3>
+                                <p class=" text-2xl font-bold text-[24px] text-[#922100]">Goons Minted</p>                                         
+                        </div>
+                    </div>
+                </div>
+
+
+
+                
+    
+
+            </div>
+        </div>
+    </section>
+
+
+    <section  data-aos="fade-right" class="relative mt-[160px] lg:p-0 p-4" id="technologySwiper">
+
+        <div class="flex md:flex-row flex-col items-center justify-between mb-4 container max-w-[1024px] mx-auto mb-9">
+            <div>
+                <h2 class="font-bold text-gray-900 text-[40px] flex  items-center">Technology </h2>
+                <p class="text-[#747474] text-[20px] mt-2">Cutting edge infrastructure and products</p>
+            </div>
+            <div class="flex gap-2 md:mt-0 mt-4">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        
+   
+        <div class="swiper technologySwiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="ecosystem-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/tech/1.avif" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex justify-between items-end z-50 w-full h-full relative">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Blockchain</h3>
+                                <p class="text-gray-200 text-lg font-semibold">The onchain home for RWAs</p>
+                            </div>
+                            <div>
+                                <div class="bg-white p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="ecosystem-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/tech/2.avif" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex justify-between items-end z-50 w-full h-full relative">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Plume Passport</h3>
+                                <p class="text-gray-200 text-lg font-semibold">The RWAfi Wallet</p>
+                            </div>
+                            <div>
+                                <div class="bg-white p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="swiper-slide">
+                    <div class="ecosystem-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/tech/3.avif" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex justify-between items-end z-50 w-full h-full relative">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Arc</h3>
+                                <p class="text-gray-200 text-lg font-semibold">Bring anything onchain</p>
+                            </div>
+                            <div>
+                                <div class="bg-white p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
+                <div class="swiper-slide">
+                    <div class="ecosystem-card rounded-xl p-8 h-full flex flex-col justify-between cursor-pointer relative overflow-hidden border border-gray-100 group">
+                        <div class="flex justify-center w-full h-full absolute top-0 left-0 overflow-hidden">
+                            <img src="/assets/images/tech/4.avif" alt="" class="w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        </div>
+                        <div class="flex justify-between items-end z-50 w-full h-full relative">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Nexus</h3>
+                                <p class="text-gray-200 text-lg font-semibold">Onchain data highway</p>
+                            </div>
+                            <div>
+                                <div class="bg-white p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
+
+
+
+                
+    
+
+            </div>
+        </div>
+    </section>
+
+ 
+    <section class="container mx-auto max-w-[1024px] relative mt-[160px] lg:p-0 p-4">
+
+        <div data-aos="fade-up" class="flex justify-center items-center flex-col">
+            <div class="title text-[40px] font-bold">Backed by The Best</div>
+            <div class="desc text-[20px] text-[#747474]">Plume is supported by leading institutions and companies</div>
+        </div>
+
+        <div data-aos="fade-up" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+            <div class="w-full bg-[#f9f9f9] flex justify-center items-center h-[120px]">
+                <img class="w-[157px]" src="https://cdn.prod.website-files.com/670fc97cba6a0b3f2e579538/671108159c87cb4b85cefecd_Selini.png" alt="">
+            </div>
+            <div class="w-full bg-[#f9f9f9] flex justify-center items-center h-[120px]">
+                <img class="w-[157px]" src="https://cdn.prod.website-files.com/670fc97cba6a0b3f2e579538/671108159c87cb4b85cefecd_Selini.png" alt="">
+            </div>
+            <div class="w-full bg-[#f9f9f9] flex justify-center items-center h-[120px]">
+                <img class="w-[157px]" src="https://cdn.prod.website-files.com/670fc97cba6a0b3f2e579538/671108159c87cb4b85cefecd_Selini.png" alt="">
+            </div>
+            <div class="w-full bg-[#f9f9f9] flex justify-center items-center h-[120px]">
+                <img class="w-[157px]" src="https://cdn.prod.website-files.com/670fc97cba6a0b3f2e579538/671108159c87cb4b85cefecd_Selini.png" alt="">
+            </div>
+            <div class="w-full bg-[#f9f9f9] flex justify-center items-center h-[120px]">
+                <img class="w-[157px]" src="https://cdn.prod.website-files.com/670fc97cba6a0b3f2e579538/671108159c87cb4b85cefecd_Selini.png" alt="">
+            </div>
+            <div class="w-full bg-[#f9f9f9] flex justify-center items-center h-[120px]">
+                <img class="w-[157px]" src="https://cdn.prod.website-files.com/670fc97cba6a0b3f2e579538/671108159c87cb4b85cefecd_Selini.png" alt="">
+            </div>
+            <div class="w-full bg-[#f9f9f9] flex justify-center items-center h-[120px]">
+                <img class="w-[157px]" src="https://cdn.prod.website-files.com/670fc97cba6a0b3f2e579538/671108159c87cb4b85cefecd_Selini.png" alt="">
+            </div>
+            <div class="w-full bg-[#f9f9f9] flex justify-center items-center h-[120px]">
+                <img class="w-[157px]" src="https://cdn.prod.website-files.com/670fc97cba6a0b3f2e579538/671108159c87cb4b85cefecd_Selini.png" alt="">
+            </div>
+            <div class="w-full bg-[#f9f9f9] flex justify-center items-center h-[120px]">
+                <img class="w-[157px]" src="https://cdn.prod.website-files.com/670fc97cba6a0b3f2e579538/671108159c87cb4b85cefecd_Selini.png" alt="">
+            </div>
+            <div class="w-full bg-[#f9f9f9] flex justify-center items-center h-[120px]">
+                <img class="w-[157px]" src="https://cdn.prod.website-files.com/670fc97cba6a0b3f2e579538/671108159c87cb4b85cefecd_Selini.png" alt="">
+            </div>
+            <div class="w-full bg-[#f9f9f9] flex justify-center items-center h-[120px]">
+                <img class="w-[157px]" src="https://cdn.prod.website-files.com/670fc97cba6a0b3f2e579538/671108159c87cb4b85cefecd_Selini.png" alt="">
+            </div>
+            <div class="w-full bg-[#f9f9f9] flex justify-center items-center h-[120px]">
+                <img class="w-[157px]" src="https://cdn.prod.website-files.com/670fc97cba6a0b3f2e579538/671108159c87cb4b85cefecd_Selini.png" alt="">
+            </div>
+            
+        </div>
+
+    </section>
+
+    
+    <footer class="bg-white py-12 mt-[160px] max-w-[1024px] mx-auto">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                
+                <div class="footer-column">
+                    <h3 class="text-gray-900 font-semibold mb-4">Plume</h3>
+                    <div class="flex flex-col space-y-3">
+                        <a href="https://docs.plumenetwork.xyz/plume#about-us" target="_blank" 
+                           class="text-gray-600 hover:text-gray-900 transition-colors">About</a>
+                        <a href="https://docs.plumenetwork.xyz/plume/plume-overview/architecture" target="_blank"
+                           class="text-gray-600 hover:text-gray-900 transition-colors">Chain</a>
+                        <a href="/arc" class="text-gray-600 hover:text-gray-900 transition-colors">Arc</a>
+                        <a href="/nexus" class="text-gray-600 hover:text-gray-900 transition-colors">Nexus</a>
+                        <a href="/pusd" class="text-gray-600 hover:text-gray-900 transition-colors">pUSD</a>
+                    </div>
+                </div>
+ 
+
+                <div class="footer-column">
+                    <h3 class="text-gray-900 font-semibold mb-4">Resources</h3>
+                    <div class="flex flex-col space-y-3">
+                        <a href="/blog" class="text-gray-600 hover:text-gray-900 transition-colors">Blog</a>
+                        <a href="https://docs.plumenetwork.xyz/" target="_blank" 
+                           class="text-gray-600 hover:text-gray-900 transition-colors">Documentation</a>
+                        <a href="/media-kit" class="text-gray-600 hover:text-gray-900 transition-colors">Brand Assets</a>
+                        <a href="/team" class="text-gray-600 hover:text-gray-900 transition-colors">Team</a>
+                        <a href="https://jobs.ashbyhq.com/plume-network" target="_blank"
+                           class="text-gray-600 hover:text-gray-900 transition-colors">Careers</a>
+                    </div>
+                </div>
+    
+              
+                <div class="footer-column">
+                    <h3 class="text-gray-900 font-semibold mb-4">Legal</h3>
+                    <div class="flex flex-col space-y-3">
+                        <a href="/privacy-policy" class="text-gray-600 hover:text-gray-900 transition-colors">Privacy Policy</a>
+                        <a href="/terms-of-service" class="text-gray-600 hover:text-gray-900 transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+    
+         
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 ">
+               
+                <a href="/" class="mb-6 md:mb-0">
+                    <img src="/assets/images/logo.png" 
+                         alt="Plume Logo" 
+                         class="h-8">
+                </a>
+    
+               
+                <div class="flex space-x-6">
+                  
+                    <a href="https://x.com/plumenetwork" target="_blank" 
+                       class="text-gray-600 hover:text-gray-900 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M215,219.85a8,8,0,0,1-7,4.15H160a8,8,0,0,1-6.75-3.71l-40.49-63.63L53.92,221.38a8,8,0,0,1-11.84-10.76l61.77-68L41.25,44.3A8,8,0,0,1,48,32H96a8,8,0,0,1,6.75,3.71l40.49,63.63,58.84-64.72a8,8,0,0,1,11.84,10.76l-61.77,67.95,62.6,98.38A8,8,0,0,1,215,219.85Z"></path>
+                        </svg>
+                    </a>
+    
+                    <a href="https://discord.com/invite/plume-network" target="_blank"
+                       class="text-gray-600 hover:text-gray-900 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M247.51,174.39,218,58a16.08,16.08,0,0,0-13-11.88l-36.06-5.92a16.22,16.22,0,0,0-18.26,11.88l-.21.85a4,4,0,0,0,3.27,4.93,155.62,155.62,0,0,1,24.41,5.62,8.2,8.2,0,0,1,5.62,9.7,8,8,0,0,1-10.19,5.64,155.4,155.4,0,0,0-90.8-.1,8.22,8.22,0,0,1-10.28-4.81,8,8,0,0,1,5.08-10.33,156.85,156.85,0,0,1,24.72-5.72,4,4,0,0,0,3.27-4.93l-.21-.85A16.21,16.21,0,0,0,87.08,40.21L51,46.13A16.08,16.08,0,0,0,38,58L8.49,174.39a15.94,15.94,0,0,0,9.06,18.51l67,29.71a16.17,16.17,0,0,0,21.71-9.1l3.49-9.45a4,4,0,0,0-3.27-5.35,158.13,158.13,0,0,1-28.63-6.2,8.2,8.2,0,0,1-5.61-9.67,8,8,0,0,1,10.2-5.66,155.59,155.59,0,0,0,91.12,0,8,8,0,0,1,10.19,5.65,8.19,8.19,0,0,1-5.61,9.68,157.84,157.84,0,0,1-28.62,6.2,4,4,0,0,0-3.27,5.35l3.49,9.45a16.18,16.18,0,0,0,21.71,9.1l67-29.71A15.94,15.94,0,0,0,247.51,174.39ZM92,152a12,12,0,1,1,12-12A12,12,0,0,1,92,152Zm72,0a12,12,0,1,1,12-12A12,12,0,0,1,164,152Z"></path>
+                        </svg>
+                    </a>
+    
+                   
+                    <a href="https://t.me/plumenetwork_community" target="_blank"
+                       class="text-gray-600 hover:text-gray-900 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M228.88,26.19a9,9,0,0,0-9.16-1.57L17.06,103.93a14.22,14.22,0,0,0,2.43,27.21L72,141.45V200a15.92,15.92,0,0,0,10,14.83,15.91,15.91,0,0,0,17.51-3.73l25.32-26.26L165,220a15.88,15.88,0,0,0,10.51,4,16.3,16.3,0,0,0,5-.79,15.85,15.85,0,0,0,10.67-11.63L231.77,35A9,9,0,0,0,228.88,26.19ZM175.53,208,92.85,135.5l119-85.29Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"> </script>
+</body>
+</html>
