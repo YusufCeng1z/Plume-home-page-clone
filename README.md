@@ -2,6 +2,8 @@
 
 This is a clone of the homepage of [PlumeNetwork](https://plumenetwork.xyz/) created using HTML, CSS, JavaScript, Swiper, Tailwind CSS, AOS (Animate on Scroll), and Lottie-web for animations. The project aims to replicate the look and feel of the original homepage while showcasing the use of modern web technologies.
 
+Live : https://plumeclone.netlify.app/
+
 ## Features
 
 - **Responsive Design**: The homepage is fully responsive and adapts to different screen sizes.
